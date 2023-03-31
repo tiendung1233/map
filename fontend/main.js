@@ -62,3 +62,14 @@ function initialize_map() {
     view: viewMap,
   });
 }
+
+const mapELement = document.querySelector("#map");
+const toolTip = document.querySelector(".tool_tip");
+
+mapELement.addEventListener("mousemove", e=>{
+  toolTip.classList.remove("hide_tool_tips");
+  document.querySelector(".coordinateX").innerHTML = e.offsetX;
+  document.querySelector(".coordinateY").innerHTML = e.offsetY;
+  toolTip.style.top = e.offsetY + "px";
+  toolTip.style.left = e.offsetX + "px";
+})

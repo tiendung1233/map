@@ -1,20 +1,22 @@
 body {
     font-family: 'Dancing Script', cursive;
-}
-
-.app {
-    background-image: url("/Screen\ Shot\ 2023-03-31\ at\ 09.50.54.png");
-    height: 100vh;
-    width: 100%;
+    background-image: url("/webGis/map/fontend/Screen\ Shot\ 2023-03-31\ at\ 09.50.54.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    overflow: hidden;
+    position: relative;
+}
+
+.app {
+    height: 100vh;
+    width: 100%;
     position: relative;
 }
 
 .header {
     font-family: 'Dancing Script', cursive;
-    font-size: 150px;
+    font-size: 80px;
     text-align: center;
     color: rgb(124, 124, 17);
     font-weight: 700;
@@ -24,7 +26,7 @@ body {
 }
 
 .ban-do {
-    height: 70vh;
+    height: 60vh;
     background-color: white;
 }
 
@@ -38,16 +40,16 @@ body {
 }
 
 .input-group {
-    height: 50px;
+    height: 30px;
 }
 
 .input-group input {
-    font-size: 50px;
+    font-size: 24px;
 
 }
 
 .input-group button {
-    font-size: 50px;
+    font-size: 30px;
 }
 .modal {
 display: none; /* Hidden by default */
@@ -90,3 +92,21 @@ cursor: pointer;
     height:100%;
     margin-top: 50px;
 }
+
+.tool_tip {
+    position: absolute;
+    z-index: 100;
+    display: block;
+    background-color: #fefefe;
+    /* top: 10px;
+    left: 50%; */
+  }
+  
+  .tooltip:hover .tooltiptext {
+    visibility: visible;
+  }
+
+.hide_tool_tips{
+    display: none;
+}
+

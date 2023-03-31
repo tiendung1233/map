@@ -28,8 +28,14 @@
                     aria-describedby="search-addon" />
                 <button type="button" class="btn btn-outline-primary">search</button>
             </div>
-            <div class="ban-do">
-                                <div id="map"></div>
+            
+            <div class="ban-do" style="position: relative;">
+                <div id="map"></div>
+                <div class="tool_tip hide_tool_tips">
+                    <div>Information</div>
+                    <div>X: <span class="coordinateX"></span></div>
+                    <div>Y: <span class="coordinateY"></span></div>
+                </div>
             </div>
         </div>
     </div>
@@ -48,6 +54,8 @@
 
     </div>
     </div>
+
+
 </body>
 <script src="./main.js"></script>
 </html>
