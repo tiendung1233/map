@@ -22,13 +22,14 @@
 <body onload="initialize_map()">
     <div class="app">
         <div class="header">Giang Sơn Map</div>
-        <div class="ban-do-app">
+        <div class="ban-do-app" style=" border: 3px solid black;
+        border-radius: 5px;">
             <div class="input-group">
                 <input type="search" class="form-control rounded" placeholder="Search" aria-label="Search"
                     aria-describedby="search-addon" />
                 <button type="button" class="btn btn-outline-primary">search</button>
             </div>
-            
+
             <div class="ban-do" style="position: relative;">
                 <div id="map"></div>
                 <div class="tool_tip hide_tool_tips">
@@ -58,4 +59,5 @@
 
 </body>
 <script src="./main.js"></script>
+
 </html>
